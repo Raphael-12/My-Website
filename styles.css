@@ -8,8 +8,8 @@
     
 }
 body{
-    font-weight: 300;
-    font-family: 'arial', 'Circular Std Light', sans-serif;
+    font-weight: 400;
+    font-family: Arial, 'Circular Std Light', sans-serif;
     font-size: 18px;
 }
 #nav-box{
@@ -309,6 +309,7 @@ in mobile format that is at 960px*/
     text-align: center;
     margin: 10px auto;
     font-family: 'Circular Std Light';
+    font-weight: 400;
     color: white;
     font-size: 20px;
     line-height: 1.7;
@@ -362,6 +363,8 @@ in mobile format that is at 960px*/
     text-align: center;
     max-width: 900px;
     line-height: 1.7;
+    font-family: 'Circular Std Light';
+    font-weight: 300;
 }
 .shop__link{
     margin: 0 auto;
@@ -397,10 +400,11 @@ in mobile format that is at 960px*/
     max-width: 100%;
 }
 .slide{
-   
     margin: 50px auto;
     padding: 0 20px;
+    font-weight: 300;
 }
+
 #skin_care{
     text-decoration: none;
     color: palevioletred;
@@ -547,8 +551,6 @@ in mobile format that is at 960px*/
 }
 .quote-text p{
     font-size: 20px;
-    font-family: 'Chronicle Disp Cond Black';
-   
 }
 .quote-pic{
     max-width: 100%;
@@ -746,7 +748,6 @@ footer{
     font-weight: 500px;
     text-align: center;
     margin-bottom: 10px;
-    text-decoration: underline;
 }
 .line{
     display: grid;
@@ -1022,6 +1023,16 @@ footer{
         order: 2;
     }
 }
+@media screen and (max-width: 560px) {
+.to-say{
+        
+    padding: 0;
+    font-size: 16px;
+}
+.ad{
+    font-size: 16px;
+}
+}
 .order-text{
     margin: 0 20px;
     text-align: center;
@@ -1097,6 +1108,20 @@ footer{
     }
     #name{
         text-align: left;
+    }
+}
+@media screen and (max-width: 560px) {
+    .story{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .Mission{
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .reason{
+        font-size: 16px;
+        line-height: 1.7;
     }
 }
 
@@ -1216,6 +1241,14 @@ footer{
     }
    
 }
+@media screen and (max-width: 560px) {
+    #terms-text{
+        font-size: 16px;
+    }
+    .intro{
+        font-size: 16px;
+    }
+}
 /*refund policy*/
 .Refund{
     margin: 0 50px;
@@ -1235,6 +1268,11 @@ footer{
 .Refund{
     margin: 0 10px;
 }
+}
+@media screen and (max-width: 560px) {
+    .refund-text{
+        font-size: 16px;
+    }
 }
 
 /*skin care pack*/
@@ -1297,7 +1335,7 @@ footer{
         margin: 0 10px;
     }
     .description-text{
-        font-size: 16px;
+        font-size: 18px;
     }
     .comment{
         font-size: 16px;
@@ -1420,4 +1458,91 @@ footer{
         margin: 0 10px;
     }
 
+}
+/*bio services*/
+.services{
+    margin: 20px 50px;
+    line-height: 1.7;
+}
+.service{
+    text-align: center;
+    color: green;
+    font-size: 20px;
+}
+.service-head{
+    color: palevioletred;
+}
+@media screen and (max-width: 768px) {
+    .intro{
+        margin: 0 10px;
+    }
+    .services{
+        display: block;
+        margin: 0 10px;
+    }
+    #service-text{
+        margin: 10px 20px;
+    }
+    .service-head{
+   margin: 0 50px;
+    }
+   
+}
+.services__feed{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 29%;
+    gap: 35px;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain; /* blocks the content within page*/
+    max-width: 98%;
+}
+.service-comment{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: palevioletred;
+}
+/*screen slide*/
+.sliding > img{
+    inline-size: 100%;
+    
+    object-fit:cover;
+}
+/*inline access*/
+.snap-inline{
+    scroll-snap-type: inline mandatory;
+}
+.snap-inline > *{
+    scroll-snap-align: start;
+}
+@media screen and (max-width:960px) {
+    .services__feed{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 46%;
+        gap: 13px;
+        overflow-x: auto;
+        overscroll-behavior-inline: contain; 
+    }
+}
+@media screen and (max-width:540px) {
+    .services__feed{
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 81%;
+        overflow-x:auto;
+        overscroll-behavior-inline: contain; 
+    }
+    .service-comment{
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        font-style: italic;
+        
+    }
+    .service-text{
+        font-size: 16px;
+    }
 }
