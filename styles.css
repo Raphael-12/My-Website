@@ -1465,13 +1465,17 @@ footer{
     line-height: 1.7;
 }
 .service{
-    text-align: center;
     color: green;
     font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
 .service-head{
     color: palevioletred;
+    font-weight: bold;
+    margin: 0 50px;
 }
+
 @media screen and (max-width: 768px) {
     .intro{
         margin: 0 10px;
@@ -1487,6 +1491,26 @@ footer{
    margin: 0 50px;
     }
    
+}
+@media screen and (max-width: 540px) {
+    .service{
+        text-align: center;
+        color: green;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .service-head{
+        color: palevioletred;
+        text-align: left;
+        font-weight: bold;
+        font-size: 16px;
+        list-style: decimal;
+        list-style-position: outside;
+    }
+    #service-text{
+        text-align: left;
+        font-size: 16px;
+    }
 }
 .services__feed{
     display: grid;
