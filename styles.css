@@ -1317,6 +1317,7 @@ footer{
 }
 .comment{
     margin: 0 50px;
+    text-align: center;
 }
 
 .comment a {
